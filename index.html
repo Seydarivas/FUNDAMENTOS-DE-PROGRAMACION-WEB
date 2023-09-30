@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-   
+    <script src="https://kit.fontawesome.com/5977472900.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+C
     ShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,13 +14,14 @@
     <section class="inicio" id="inicio">
         <div class="contenido-seccion">
             <header>
-                <div class="nav-bar">
+                <div class="nav-bar" onclick="mostrarOcultarMenu()"> 
                     <i class="fa-solid fa-bars"></i>
                 </div>
                 <nav id="nav" class="nav">
                     <a href="#inicio">Inicio</a>
-                    <a href="#sobremi">Sobre mi</a>_
+                    <a href="#sobremi">Sobre mi</a>
                     <a href="#habilidades">Habilidades</a>
+                    <a href="#resumen">Resumen</a>
                     <a href="#contacto">Contacto</a>
                 </nav>
                 <div class="logo">
@@ -29,19 +30,229 @@
             </header>
             <div class="info">
                 <h1>SEYDA RIVAS</h1>
-                <h2>INGENIERIA DE SOFTWARE</h2>
+                <h2>INGENIERa DE SOFTWARE</h2>
                 <div class="redes">
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-youtube"></i></a>
                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
 
                 </div>
             </div>
+            <div class="foto">
+                <img src="jhosep.png" alt="">
+            </div>
         </div>
     </section>
-    
+    <section class="sobremi" id="sobremi">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Sobre mi</h2>
+            <h3>Detalles personales</h3>
+
+            <p class="especial">Me dedico al desarrollo web y sistemas informáticos</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quidem quas sit maiores porro laborum consectetur odit 
+                reprehenderit inventore reiciendis fuga ipsum voluptate, culpa, architecto repellendus. Iusto ut mollitia autem.</p>
+                  
+            <div class="fila">
+                <div class="col">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="titulo-detalle">Perfil</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus maxime odio reprehenderit adipisci
+                         ullam eligendi aut expedita dolore quasi sint veniam in ex illum dolores culpa, velit deleniti tempora!</p>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="titulo-detalle">Ubicacion</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus maxime odio reprehenderit adipisci
+                         ullam eligendi aut expedita dolore quasi sint veniam in ex illum dolores culpa, velit deleniti tempora!</p>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-flag"></i>
+                    <span class="titulo-detalle">Intereses</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus maxime odio reprehenderit adipisci
+                         ullam eligendi aut expedita dolore quasi sint veniam in ex illum dolores culpa, velit deleniti tempora!</p>
+                </div>
+            </div>
+            </div>
+    </section>
+    <section class="habilidades" id="habilidades">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Mis habilidades</h2>
+            <h3>Me especializo en</h3>
+
+            <div class="fila">
+                <div class="col">
+                    <span>HTML/CSS</span>
+                    <div class="cont-barra">
+                        <div class="barra" id="html">
+                            <!-- generar 17 barritas con clase e en js -->
+                            <div class="e"></div>
+
+                        </div>
+                        <span>98%</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <span>JAVASCRPIT</span>
+                    <div class="cont-barra">
+                        <div class="barra" id="javascript">
+                            <!-- generar 17 barritas con clase e en js -->
+                            <div class="e"></div>
+                        </div>
+                        <span>70%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <span>PYTHON</span>
+                    <div class="cont-barra">
+                        <div class="barra" id="wordpress">
+                            <!-- generar 17 barritas con clase e en js -->
+                            <div class="e"></div>
+                        </div>
+                        <span>90%</span>
+                    </div>
+                </div>
+            <div class="col">
+                    <span>JAVA</span>
+                    <div class="cont-barra">
+                        <div class="barra" id="photoshop">
+                            <!-- generar 17 barritas con clase e en js -->
+                            <div class="e"></div>
+                        </div>
+                        <span>85%</span>
+                    </div>
+                </div>
+           
+
+                    <div class="col">
+                        <span>C++</span>
+                        <div class="cont-barra">
+                            <div class="barra" id="c++">
+                                <!-- generar 17 barritas con clase e en js -->
+                                <div class="e"></div>
+                            </div>
+                            <span>95%</span>
+                        </div>
+                    </div>
+                <div>
+        </div>
+    </section>
+    <section class="resumen" id="resumen">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Resumen</h2>
+            <h3>Mi preparacion y experiencia</h3>
+            <div class="info">
+                <div class="col">
+                    <span class="titulo">Educación</span>
+                    <table>
+                        <tr>
+                            <td class="datos">
+                                <h3>2023 - 2026</h3>
+                            </td>
+                            <td rowspan="2" class = "descripcion">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Nulla, est ut, laborum laudantium ratione dolore eum.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Ing. Software</h4>
+                                <p>Senati</p>
+                                <span class="promedio">8.9 PG</span>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td class="datos">
+                                <h3>2027 - 2032</h3>
+                            </td>
+                            <td rowspan="2" class = "descripcion">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Nulla, est ut, laborum laudantium ratione dolore eum.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Ing. Sistemas</h4>
+                                <p>Universidad Tecnológica del Perú</p>
+                                <span class="promedio">8.9 PG</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col">
+                    <span class="titulo">Experiencia Laboral</span>
+                    <table>
+                        <tr>
+                            <td class="datos">
+                                <h3>3 Años</h3>
+                            </td>
+                            <td rowspan="3" class="descripcion">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Nulla, est ut, laborum laudantium ratione dolore eum.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Mercado Libre</h4>
+                                <p>Programador Junior</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td class="datos">
+                                <h3>2 Años</h3>
+                            </td>
+                            <td rowspan="2" class="descripcion">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Nulla, est ut, laborum laudantium ratione dolore eum.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Diseñador web</h4>
+                                <p>Diseñador</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacto" id="contanto">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Contacto</h2>
+            <h3>Ponte en contacto ahora mismo!</h3>
+
+            <div class="fila">
+                <div class="col">
+                    <h2>
+                        <i class="fa-solid fa-phone"></i> Télefono
+                    </h2>
+                    <span class="info-contacto">924 002 474</span>
+                </div>
+                <div class="col">
+                    <h2>
+                        <i class="fa-solid fa-envelope"></i> Correo
+                    </h2>
+                    <span class="info-contactos">seyda.rivasher@gmail.com</span>
+                </div>
+                <div class="col">
+                    <h2>
+                        <i class="fa-solid fa-globe"></i> Página Web
+                    </h2>
+                    <span class="info-contactos">seydarivas.com</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src = "app.js"></script>
 </body>
 </html>
