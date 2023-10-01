@@ -1,5 +1,5 @@
 var menu_visible = false;
-let menu = documen.getElementById("nav");
+let menu = document.getElementById("nav");
 function mostrarOcultarMenu(){
     if ( menu_visible==false){
         menu.style.display = "block";
@@ -27,18 +27,19 @@ function crearBarra(id_barra){
     }
 }
 
-let html = documen.getElementById("html");
+let html = document.getElementById("html");
 crearBarra(html);
 let javascript = document.getElementById("javascript");
 crearBarra(javascript);
 let python = document.getElementById("python");
 crearBarra(python);
 let java = document.getElementById("java");
-crearBarra(photoshop);
-let csharp = document.getElementById("c++");
-crearBarra(c++);
+crearBarra(java);
+let sharp = document.getElementById("sharp");
+crearBarra(sharp);
 
 let contadores = [-1,-1,-1,-1,-1];
+
 let entro = false;
 
 function efectoHabilidades(){
@@ -59,7 +60,7 @@ function efectoHabilidades(){
             pintarBarra(java, 15, 3, intervalJava);
         }, 100);
         const intervalCsharp = setInterval(function(){
-            pintarBarra(c++, 16, 4, intervalc++);
+            pintarBarra(sharp, 16, 4, intervalCsharp);
         }, 100);
      }
 }
@@ -67,7 +68,7 @@ function efectoHabilidades(){
 function pintarBarra(id_barra, cantidad, indice, interval){
     contadores[indice]++;
     x = contadores[indice];
-    if ( x < cantidad){
+    if (x < cantidad){
         let elementos = id_barra.getElementByClassName("e");
         elementos[x].style.backgroundColor = "#940253";
     }
